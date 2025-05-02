@@ -1,0 +1,650 @@
+.step-container {
+    background: #f8f8f8;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-wrapper {
+    background: #fff;
+    padding: 50px 62px;
+    border-radius: 20px;
+    max-width: 1434px;
+    width: 100%;
+    /* min-height: 806px; */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.inner-container {
+    width: 761px;
+    margin: 0 auto;
+}
+
+.step-indicator {
+    display: flex;
+    gap: 10px;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+}
+
+.step-indicator div {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+.step-indicator .active {
+    background: #B0BAC9;
+    border-color: #B0BAC9;
+    width: 20px;
+    height: 20px;
+    margin-top: -4px;
+}
+
+.step-logo {
+    width: 160px;
+    height: 144px;
+    margin: 0 auto 20px;
+}
+
+.step-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.form-wrapper h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.step-3 .description {
+    margin-bottom: 20px;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.form-wrapper form input {
+    margin-bottom: 45px;
+}
+
+.form-wrapper input[type="email"],
+.form-wrapper input[type="password"],
+.form-wrapper input[type="text"] {
+    padding: 14px 16px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    /* width: 100%; */
+}
+
+.form-wrapper button {
+    padding: 14px;
+    border: solid 1px #D7D8D9;
+    border-radius: 30px;
+    background: transparent;
+    color: #808285;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 305px;
+    margin: 0 auto;
+}
+
+.form-wrapper button:hover {
+    background: #ddd;
+}
+
+.note {
+    font-size: 13px;
+    color: #888;
+    margin-top: 16px;
+}
+
+.form-wrapper label {
+    text-align: left;
+    color: #808285;
+    font-size: 14px;
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
+
+.step-indicator{
+    position: relative;
+}
+
+.step-indicator .nmbr1:before {
+    content: '01';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    color: #B0BAC9;
+}
+
+.step-indicator .nmbr2:before {
+    content: '02';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    color: #B0BAC9;
+}
+
+.step-indicator .nmbr3:before {
+    content: '03';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    color: #B0BAC9;
+}
+
+.step-indicator .nmbr4:before {
+    content: '04';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+    color: #B0BAC9;
+}
+
+.step-3 {
+    display: flex;
+    align-items: center;
+    background-color: #D7D8D9;
+    border-radius: 10px;
+    margin-bottom: 26px;
+}
+
+.step-3 .step-logo1 {
+    background-color: #B0BAC9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.step-logo1 img {width: 87px;height: 79px;}
+
+.step-3 p.text {
+    padding: 30px;
+    text-align: left;
+}
+
+.inner-container p.aftr-txt a {
+    color: #40659C;
+}
+
+.step-3 form label {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    color: black;
+    display: flex;
+    gap: 14px;
+}
+
+.step-3 .form-wrapper form input {
+    margin-bottom: 14px;
+    width: 20px;
+    height: 20px;
+}
+
+.step-3 button {
+    margin-top: 30px;
+}
+
+.step-3 p.aftr-txt {
+    margin-bottom: 30px;
+}
+
+.step-3 form .radio {
+    margin: 0 auto;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #D7D8D9;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #B0BAC9;
+    border-radius: 50%;
+}
+
+.membership-card {
+    border: solid 1px #D7D8D9;
+    border-radius: 20px;
+    width: 237px;
+    min-height: 519px;
+    display: grid;
+    grid-template-rows: 140px 75px 300px;
+}
+
+.membership-header {
+    /* background-color: #B0BAC9; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 10px;
+    /* height: 132px; */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.membership-header img {
+    width: 83px;
+    height: 84px;
+    object-fit: cover;
+    margin-top: 8px;
+}
+
+.membership-header p {
+    margin: unset;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.membership-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 34px;
+    padding: 0 10px;
+}
+
+.membership-card h3 span {
+    color: #D7D8D9;
+}
+
+.membership-body {
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.membership-body button {
+    width: 150px;
+    border-radius: 14px;
+}
+
+.membership-body ul li {
+    color: #808285;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+}
+
+.membership-body .btn {
+    padding: 20px 0;
+}
+
+.members-sec {
+    display: flex;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    padding: 20px 0px;
+    justify-content: center;
+}
+
+.membrs-con {
+    width: 100%;
+}
+
+.membrs-con .description {
+    width: 566px;
+    margin: 0 auto;
+}
+
+.membrs-con p.badge-redirect a {
+    color: #40659C;
+    text-decoration: none;
+}
+
+
+/* dashboard css */
+
+.user-dashboard {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    font-family: Arial, sans-serif;
+}
+
+.user-dashboard h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.user-dashboard form p {
+    margin-bottom: 20px;
+}
+
+.user-dashboard label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.user-dashboard input[type="text"],
+.user-dashboard input[type="email"],
+.user-dashboard input[type="password"],
+.user-dashboard select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.user-dashboard input[type="radio"] {
+    margin-right: 8px;
+}
+
+.user-dashboard button[type="submit"] {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.user-dashboard button[type="submit"]:hover {
+    background-color: #005177;
+}
+
+.notice.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-left: 5px solid #28a745;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.first-header {
+    background-image: url('http://membership-.test/wp-content/uploads/2025/05/Rectangle-37.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.second-header {
+    background-image: url('http://membership-.test/wp-content/uploads/2025/05/Rectangle-37-1.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.third-header {
+    background-image: url('http://membership-.test/wp-content/uploads/2025/05/Rectangle-37-2.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fourth-header {
+    background-image: url('http://membership-.test/wp-content/uploads/2025/05/Rectangle-37-3.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fifthe-header {
+    background-image: url('http://membership-.test/wp-content/uploads/2025/05/Rectangle-37-4.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.inner-container .sub-heading {
+    font-size: 14px;
+    color: #808285;
+    width: 566px;
+    margin: 0 auto;
+}
+
+.pameny-con p.description {
+    color: black;
+    font-size: 16px;
+}
+
+.pamnt-head {
+    text-align: left;
+    color: #B0BAC9;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'dashicons';
+}
+
+.badge-con p.description {
+    color: black;
+}
+
+.b-card1 {
+    background-image: url(http://membership-.test/wp-content/uploads/2025/05/Rectangle-37-5.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.b-card2 {
+    background-image: url(http://membership-.test/wp-content/uploads/2025/05/Rectangle-37-6.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.b-card3 {
+    background-image: url(http://membership-.test/wp-content/uploads/2025/05/Rectangle-37-7.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.badge-con .membership-card h3 span {
+    color: #808285;
+}
+
+.badge-con p.badge-redirect a {
+    color: #40659C;
+    text-decoration: none;
+}
+
+.badge-head {
+    text-align: left;
+    color: #B0BAC9;
+    font-family: 'dashicons';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.back a {
+    text-decoration: none;
+    color: #B0BAC9;
+}
+
+.back {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.d-container {
+    max-width: 1434px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 35px;
+    display: flex;
+    flex-direction: row;
+    min-height: 952px;
+}
+
+.d-side-header {
+    background-color: #D4E0F2;
+    padding: 30px 100px 30px 30px;
+    width: 263px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.d-main img {
+    width: 113px;
+    height: 115px;
+    object-fit: contain;
+}
+
+.d-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.d-main h2 {
+    font-size: 24px;
+}
+
+.d-body {
+    max-width: 1250px;
+    padding: 20px;
+}
+
+.d-container input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.d-container input[type="radio"]:checked::before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 23px;
+    background-color: #B0BAC9;
+    border-radius: 50%;
+    left: 0;
+    top: 0px;
+}
+
+.d-container p.d-btn button {padding: 10px 20px;border-radius: 8px;border: solid 1px #B0BAC9;background-color: #B0BAC9;color: white;}
+
+.d-container p.d-btn button:hover {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.d-container input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #D7D8D9;
+    border-radius: 50% ;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+.d-services label {
+    display: flex;
+    gap: 10px;
+}
+
+.d-container label {
+    font-size: 14px;
+}
+
+.membrs-con .btn button {
+    width: 150px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+/* .btn {
+    grid-row: 4;
+} */
+
+.badge-con .membership-card {
+    border: solid 1px #D7D8D9;
+    border-radius: 20px;
+    width: 237px;
+    min-height: 519px;
+    display: unset;
+    min-height: 339px;
+}
+
+.membership-body ul {
+    position: relative;
+}
+
+.membership-body ul li:before {
+    content: '';
+    background-image: url(http://membership-.test/wp-content/uploads/2025/05/Done.png);
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+
+
+
+
+
+@media (max-width:1024px){
+    .members-sec {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
